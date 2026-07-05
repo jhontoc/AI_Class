@@ -20,7 +20,7 @@ response = requests.post(
         json=payload,
         headers={
             "content-Type": "application/json",
-            "Authorization": f"Bearer egai-prd-cx-110559302-rag-1782515522259"
+            "Authorization": f"Bearer "
         }
 )
 
