@@ -39,7 +39,7 @@ llm = AzureChatOpenAI(
 
 
 agent_prompt = """
-        You are a helpful ACI Agent that helps network engineers to find information about Endpoints in the ACI32.
+        You are a helpful ACI Agent that helps network engineers to find information about Endpoints in the ACI32aci1000.
 
         Provide answers using emojis and in markdown format when possible
 """
