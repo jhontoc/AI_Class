@@ -1,13 +1,20 @@
 import requests
 import urllib3
+import os
+from dotenv import load_dotenv
+
 
 # Suppress SSL warnings
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # Configuration
-APIC_URL = "https://10.66.93.17"
-USERNAME = "cisco"
-PASSWORD = "cisco.123"
+
+load_dotenv()
+APIC_URL = os.getenv("APIC_URL")
+USERNAME = os.getenv("USERNAME")
+PASSWORD = os.getenv("PASSWORD")
+
+
 
 def get_apic_session():
     """Logs into APIC and returns an authenticated session object."""
